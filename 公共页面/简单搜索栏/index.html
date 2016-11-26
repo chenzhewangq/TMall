@@ -6,25 +6,71 @@
 	<style>
 		body {
 			margin: 0;
+			font-family: Arial;
+			font-size: 12px;
 		}
 		.simpleSearch {
+			background-color: #C40000;
 			float: right;
+			display: block;
+		}
+		.simpleSearch button {
+			background-color: #C40000;
+			color: white;
+			border: 1px solid transparent;
+			font-size: 14px;
+		}
+		.simpleSearch input {
+			width: 225px;
+			border: 1px solid transparent;
+			height: 34px;
+			margin: 2px;
+			outline: none;
+		}
+		.searchBelow {
+			background-color: white;
+			margin-top: 3px;
+			margin-left: -20px;
+		}
+		.searchBelow span {
+			color: #999;
+		}
+		.searchBelow a {
+			padding: 0 20px 0 20px;
+			font-size: 14px;
+		}
+		.simpleLogo {
+			position: absolute;
+			left: 20px;
+			top: 50px;
+			width: 140px;
+		}
+		a {
+			text-decoration:none;
+			color: #999;
+		}
+		a:hover {
+			text-decoration:none;
+			color: #c40000;
 		}
 	</style>
 </head>
 <body>
-	<div>
-		<img src="http://how2j.cn/tmall/img/site/simpleLogo.png" alt="天猫">
-	</div>
-	<div class="simpleSearch">
-		<input type="text" placeholder="平衡机 原汁机">
-		<button>搜天猫</button>
-		<div>
-			<span><a href="#">冰箱</a><span>|</span></span>
-			<span><a href="#">空调</a><span>|</span></span>
-			<span><a href="#">女表</a><span>|</span></span>
-			<span><a href="#">男表</a><span>|</span></span>
+	<a>
+		<img src="http://how2j.cn/tmall/img/site/simpleLogo.png" alt="天猫" class="simpleLogo">
+	</a>
+	<form method="post">
+		<div class="simpleSearch">
+			<input type="text" placeholder="平衡机 原汁机">
+			<button>搜天猫</button>
+			<div class="searchBelow">
+				<span><a href="#">冰箱</a><span>|</span></span>
+				<span><a href="#">空调</a><span>|</span></span>
+				<span><a href="#">女表</a><span>|</span></span>
+				<span><a href="#">男表</a><span>|</span></span>
+			</div>
 		</div>
-	</div>
+	</form>
+	<div style="clear: both"></div>
 </body>
 </html>
